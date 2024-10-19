@@ -39,7 +39,7 @@ jobs:
               cd silverbullet-docker
               git pull origin main
             else
-              git clone git@github.com:moonc4ke/kimai-tracker.git silverbullet-docker
+              git clone git@github.com:moonc4ke/silverbullet-docker.git silverbullet-docker
               cd silverbullet-docker
             fi
 
