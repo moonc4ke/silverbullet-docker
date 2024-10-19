@@ -1,0 +1,15 @@
+services:
+  silverbullet:
+    image: zefhemel/silverbullet
+    restart: always
+    environment:
+      - SB_USER=${USERNAME}:${PASSWORD}
+    volumes:
+      - ./space:/space
+    ports:
+      - 3303:3000
+  watchtower:
+    image: containrrr/watchtower
+    restart: always
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
