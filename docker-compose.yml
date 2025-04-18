@@ -1,6 +1,6 @@
 services:
   silverbullet:
-    image: zefhemel/silverbullet
+    image: ghcr.io/silverbulletmd/silverbullet:v2
     restart: always
     environment:
       - SB_USER=${USERNAME}:${PASSWORD}
