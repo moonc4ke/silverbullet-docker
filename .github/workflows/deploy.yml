@@ -64,5 +64,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/silverbullet-docker
-            docker-compose down
-            docker-compose up -d
+            docker compose down
+            docker compose up -d
